@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saharsh Farms | Premium Nature Staycation & Farm Retreat</title>
+  <meta name="description" content="Experience the ultimate staycation at Saharsh Farms. Relax in our luxury glass-wall private villa with natural spring water tank pool, gazebo, bonfire, and organic farm surroundings. Book your nature escape today.">
+  
+  <!-- FontAwesome Icons for modern aesthetic -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Floating WhatsApp Widget -->
+  <div class="whatsapp-widget" id="whatsappWidget">
+    <span class="whatsapp-tooltip">Book / Chat on WhatsApp</span>
+    <a href="https://wa.me/918623057575?text=Hi%20Saharsh%20Farms%2C%20I%20am%20interested%20in%20booking%20a%20staycation." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="whatsapp-btn" 
+       id="floatingWhatsappBtn"
+       aria-label="Contact Saharsh Farms on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#home" class="logo" id="logoLink">Saharsh<span>Farms</span></a>
+      
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active" id="navHome">Home</a></li>
+          <li><a href="#experience" class="nav-link" id="navExp">Experience</a></li>
+          <li><a href="#amenities" class="nav-link" id="navAmen">Amenities</a></li>
+          <li><a href="#stays" class="nav-link" id="navStays">The Stay</a></li>
+          <li><a href="#gallery" class="nav-link" id="navGallery">Gallery</a></li>
+          <li><a href="#contact" class="nav-link" id="navContact">Contact</a></li>
+          <li><a href="#stays" class="btn btn-primary nav-cta" id="navBookCta">Book Now</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburgerMenu" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tagline">Your Serene Escape Awaits</span>
+        <h1 class="hero-title">Experience Nature in <span>Luxury & Style</span></h1>
+        <p class="hero-desc">Discover Saharsh Farms, a premium nature staycation featuring a glass-walled private villa, natural water plunge pool, bonfires under the stars, and lush organic plantation walks.</p>
+        <div class="hero-btns">
+          <a href="#stays" class="btn btn-primary" id="exploreStaysBtn">Explore The Stay</a>
+          <a href="#experience" class="btn btn-white" style="margin-left: 15px;" id="exploreExperienceBtn">The Experience</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Check-in WhatsApp Form -->
+    <div class="quick-booking">
+      <form class="quick-booking-form" id="quickBookingForm">
+        <div class="form-group">
+          <label for="checkInDate">Check-In</label>
+          <input type="date" id="checkInDate" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="checkOutDate">Check-Out</label>
+          <input type="date" id="checkOutDate" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="guestCount">Guests</label>
+          <select id="guestCount" class="form-input">
+            <option value="1-2 Guests">1-2 Guests</option>
+            <option value="3-5 Guests">3-5 Guests</option>
+            <option value="6-10 Guests">6-10 Guests</option>
+            <option value="10+ Guests">10+ Guests</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submitQuickBooking">
+          Check Availability <i class="fas fa-arrow-right"></i>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About / Experience Section -->
+  <section class="section about" id="experience">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-subtitle">Discover Saharsh Farms</span>
+          <h2 class="section-title">An Oasis of Tranquility <span>Away From the City</span></h2>
+          <p class="about-p">Nestled amid coconut groves and organic mango plantations, Saharsh Farms offers the perfect staycation experience. Combining luxury contemporary lodging with the raw beauty of the countryside, our estate is designed to refresh your mind, body, and soul.</p>
+          <p class="about-p">Whether you are planning a cozy weekend getaway with family, a private pool party with friends, or a peaceful corporate retreat, Saharsh Farms provides complete privacy, top-tier amenities, and unparalleled hospitality.</p>
+          
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-water"></i></div>
+              <div>
+                <h4>Natural Plunge Tank</h4>
+                <p>Enjoy exclusive access to our refreshing natural spring water source.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-fire"></i></div>
+              <div>
+                <h4>Cozy Bonfire</h4>
+                <p>Gather around a warm fire under a canopy of fairy lights.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-paw"></i></div>
+              <div>
+                <h4>Pet Friendly</h4>
+                <p>We welcome your furry companions with open arms and big lawns.</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <div class="highlight-icon"><i class="fas fa-utensils"></i></div>
+              <div>
+                <h4>Home-Style Dining</h4>
+                <p>Savor farm-fresh, organic meals cooked by our in-house chef.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-image">
+          <img src="assets/images/farm.png" alt="Lush pathways at Saharsh Farms Staycation" id="aboutImg">
+          <div class="about-badge">
+            <span class="about-badge-num">10+</span>
+            <span class="about-badge-text">Acres of Lush Nature</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Section -->
+  <section class="section section-dark" id="amenities" style="background-color: var(--color-primary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">What We Offer</span>
+        <h2 class="section-title">World-Class Amenities for <span>Your Comfort</span></h2>
+        <p class="section-description">We provide all the premium comforts of a resort coupled with the privacy and warmth of a farmhouse.</p>
+      </div>
+
+      <div class="amenities-grid">
+        <!-- Amenity 1 -->
+        <div class="amenity-card" style="background-color: var(--color-primary-light);">
+          <div class="amenity-icon"><i class="fas fa-water"></i></div>
+          <h3>Natural Plunge Pool</h3>
+          <p>Indulge in our refreshing spring-fed natural water tank, filled with clean running stream water and surrounded by lush green coconut trees.</p>
+        </div>
+
+        <!-- Amenity 2 -->
+        <div class="amenity-card" style="background-color: var(--color-primary-light);">
+          <div class="amenity-icon"><i class="fas fa-wifi"></i></div>
+          <h3>High-Speed Wi-Fi</h3>
+          <p>Stay connected with high-speed internet throughout the farmhouse. Perfect for remote 'workations' amid nature.</p>
+        </div>
+
+        <!-- Amenity 3 -->
+        <div class="amenity-card" style="background-color: var(--color-primary-light);">
+          <div class="amenity-icon"><i class="fas fa-campground"></i></div>
+          <h3>Gazebo & Bonfire</h3>
+          <p>Enjoy a starry night gathered around our warm stone firepit with barbecue setup, rustic seating, and fairy lights.</p>
+        </div>
+
+        <!-- Amenity 4 -->
+        <div class="amenity-card" style="background-color: var(--color-primary-light);">
+          <div class="amenity-icon"><i class="fas fa-table-tennis"></i></div>
+          <h3>Indoor & Outdoor Games</h3>
+          <p>Play badminton, cricket on the lawn, carrom, board games, or simply run free across our massive green meadows.</p>
+        </div>
+
+        <!-- Amenity 5 -->
+        <div class="amenity-card" style="background-color: var(--color-primary-light);">
+          <div class="amenity-icon"><i class="fas fa-utensils"></i></div>
+          <h3>Kitchen & Private Chef</h3>
+          <p>Equipped kitchen with refrigerator, microwave, and stove. You can request our local chef to prepare authentic regional meals.</p>
+        </div>
+
+        <!-- Amenity 6 -->
+        <div class="amenity-card" style="background-color: var(--color-primary-light);">
+          <div class="amenity-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Secure & Private</h3>
+          <p>Fully gated property with 24/7 security staff, CCTV, ample car parking, and complete privacy for families and couples.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accommodations / Stays Section -->
+  <section class="section" id="stays">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Choose Your Sanctuary</span>
+        <h2 class="section-title">Luxurious Accommodations <span>Tailored For You</span></h2>
+        <p class="section-description">Rent the entire private farm estate exclusively for your group. Enjoy total isolation and natural peace.</p>
+      </div>
+
+      <div class="rooms-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+        <!-- Single Stay Option -->
+        <div class="room-card">
+          <div class="room-img-container" style="height: 400px;">
+            <img src="assets/images/hero.png" alt="Saharsh Farms Private Estate Villa" id="orchidVillaImg">
+            <span class="room-badge">Exclusively Yours</span>
+          </div>
+          <div class="room-details">
+            <div class="room-meta" style="flex-wrap: wrap;">
+              <span><i class="fas fa-users"></i> Up to 15+ Guests</span>
+              <span><i class="fas fa-bed"></i> 4 Bedrooms (Villa + Cottage combo)</span>
+              <span><i class="fas fa-sink"></i> 4 Baths</span>
+              <span><i class="fas fa-leaf"></i> Private 10-Acre Estate</span>
+            </div>
+            <h3>Saharsh Farms Private Estate</h3>
+            <p>Book the entire private farm estate exclusively for your family, friends, or team. Includes complete access to our signature contemporary glass-walled villa, cozy wooden cottages, refreshing natural water plunge tank, massive lawns, gazebo, and organic plantation walks. No sharing, zero disturbance, complete privacy.</p>
+            <div class="room-price-book">
+              <div class="room-price">
+                Exclusive Booking
+                <span>Rates on Request</span>
+              </div>
+              <a href="#" class="btn btn-primary room-book-btn" data-stay="Saharsh Farms Private Estate" data-price="Custom Quote">Enquire via WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section" id="gallery" style="background-color: #fcfbfa; border-top: 1px solid rgba(0,0,0,0.03);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Visual Tour</span>
+        <h2 class="section-title">Glimpses of <span>Paradise</span></h2>
+        <p class="section-description">Take a visual tour around our gorgeous villa, pool, green lawns, and farm highlights.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Gallery Item 1 -->
+        <div class="gallery-item" data-index="0" data-src="assets/images/hero.png" data-caption="Stunning dusk view of the Saharsh Farms Villa">
+          <img src="assets/images/hero.png" alt="Saharsh Farms Villa Exterior">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Villa Exterior</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="gallery-item" data-index="1" data-src="assets/images/pool.png" data-caption="Refreshing natural spring-fed water tank plunge pool">
+          <img src="assets/images/pool.png" alt="Natural Plunge Pool">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Natural Plunge Pool</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="gallery-item" data-index="2" data-src="assets/images/bedroom.png" data-caption="Cozy bohemian-style master bedroom with warm ambient lighting">
+          <img src="assets/images/bedroom.png" alt="Bohemian Master Bedroom">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Bohemian Bedroom</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 4 -->
+        <div class="gallery-item" data-index="3" data-src="assets/images/bonfire.png" data-caption="Charming bonfire area lit with golden string fairy lights">
+          <img src="assets/images/bonfire.png" alt="Garden Bonfire Area">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Bonfire & Gazebo</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 5 -->
+        <div class="gallery-item" data-index="4" data-src="assets/images/farm.png" data-caption="Scenic walking trail winding through our lush organic cultivation fields">
+          <img src="assets/images/farm.png" alt="Organic Farm Plantation">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Lush Farm Path</span>
+          </div>
+        </div>
+
+        <!-- Gallery Item 6 -->
+        <div class="gallery-item" data-index="5" data-src="assets/images/hero.png" data-caption="Warm sun rays shining over the modern architectural facade of Saharsh Farms">
+          <img src="assets/images/hero.png" alt="Saharsh Farms Villa at Dusk">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+            <span>Architectural Vibe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Gallery -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose">&times;</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&lt;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <button class="lightbox-nav lightbox-next" id="lightboxNext">&gt;</button>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Reviews / Testimonials Section -->
+  <section class="section section-dark" id="reviews" style="background-color: var(--color-primary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Guest Feedbacks</span>
+        <h2 class="section-title">Loved by <span>Families & Friends</span></h2>
+        <p class="section-description">Read reviews from our recent guests who escaped the city hustle to experience Saharsh Farms.</p>
+      </div>
+
+      <div class="testimonials-container">
+        <!-- Review 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Saharsh Farms is an absolute gem! The glass villa looks exactly like the photos, and the natural water plunge pool was so refreshing. We spent the night around the bonfire under fairy lights. We will definitely visit again!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RV</div>
+            <div>
+              <h4>Rohan Verma</h4>
+              <p>Visited June 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"We booked the entire estate for a family gathering of 12 people. The kitchen is fully equipped, and the home-cooked food prepared by the local chef was mindblowing. Very peaceful, lush greens, and pet friendly!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AP</div>
+            <div>
+              <h4>Anjali Patel</h4>
+              <p>Visited May 2026</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+          </div>
+          <p class="testimonial-text">"Amazing place for a staycation. High-speed Wi-Fi was super reliable; I worked during the day looking at coconut trees and chilled in the plunge tank in the evening. Highly recommended for digital nomads."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">KS</div>
+            <div>
+              <h4>Kabir Sharma</h4>
+              <p>Visited April 2026</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Inquiry Form Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Reach Out To Us</span>
+        <h2 class="section-title">Have Questions? <span>Get In Touch</span></h2>
+        <p class="section-description">Fill out the inquiry form, visit us, or send us a WhatsApp message directly. We usually reply within minutes.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <!-- Item 1 -->
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-item-details">
+              <h4>Our Location</h4>
+              <p>Saharsh Farms, Village Road, Karjat, Maharashtra - 410201</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div class="contact-item-details">
+              <h4>Call / WhatsApp</h4>
+              <p><a href="tel:+918623057575">+91 86230 57575</a> (Stay Booking / Support)</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-item-details">
+              <h4>Email Address</h4>
+              <p><a href="mailto:bookings@saharshfarms.com">bookings@saharshfarms.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item-details">
+            <h4 style="margin-bottom: 12px;">Connect with Us</h4>
+            <div class="contact-socials">
+              <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactInquiryForm">
+            <h3 style="margin-bottom: 24px; font-family: var(--font-heading); font-size: 24px;">Send Booking Enquiry</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contactName" style="font-size: 13px; font-weight: 600; color: var(--color-text-muted); margin-bottom: 6px; display: block;">Full Name</label>
+                <input type="text" id="contactName" class="form-input" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="contactPhone" style="font-size: 13px; font-weight: 600; color: var(--color-text-muted); margin-bottom: 6px; display: block;">Phone Number</label>
+                <input type="tel" id="contactPhone" class="form-input" placeholder="Phone Number" required>
+              </div>
+            </div>
+            <div class="form-group-full">
+              <label for="contactEmail" style="font-size: 13px; font-weight: 600; color: var(--color-text-muted); margin-bottom: 6px; display: block;">Email Address</label>
+              <input type="email" id="contactEmail" class="form-input" placeholder="Email Address" required>
+            </div>
+            <div class="form-group-full">
+              <label for="contactMessage" style="font-size: 13px; font-weight: 600; color: var(--color-text-muted); margin-bottom: 6px; display: block;">Your Message / Requested Dates</label>
+              <textarea id="contactMessage" class="form-input" style="height: 120px; resize: none;" placeholder="Tell us about your event, number of guests, and approximate dates you wish to book..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitContactForm">Send Enquiry via WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Saharsh<span>Farms</span></h3>
+          <p>Your peaceful escape away from urban chaos. Premium glass villa, natural plunge pool, and organic farm staycations.</p>
+          <div class="contact-socials">
+            <a href="#" class="social-icon" aria-label="Facebook" style="background-color: var(--color-primary-light);"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram" style="background-color: var(--color-primary-light);"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="Youtube" style="background-color: var(--color-primary-light);"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">The Experience</a></li>
+            <li><a href="#amenities">Amenities</a></li>
+            <li><a href="#stays">The Stay</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Stay Options</h4>
+          <ul class="footer-links">
+            <li><a href="#stays">Entire Private Farm Estate</a></li>
+            <li><a href="#stays">Weekend Staycations</a></li>
+            <li><a href="#stays">Day Events & Shoots</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Karjat, Maharashtra, India</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>+91 86230 57575</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>bookings@saharshfarms.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Saharsh Farms. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="app.js?v=1.1"></script>
+</body>
+</html>
